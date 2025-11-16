@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILGERA INDUSTRIES - Líderes en Rodamientos y Lubricación Industrial</title>
+    <!-- Incluir Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8f9fa; /* Fondo claro */
+        }
+        /* Color principal de la marca (Un azul marino fuerte basado en sus PDFs) */
+        .bg-mobilgera-dark { background-color: #0d1a49; } 
+        .text-mobilgera-primary { color: #1e3a8a; } 
+        .hover:bg-mobilgera-hover:hover { background-color: #1c3d70; }
+
+        /* Estilo para el botón principal */
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-10 py-3 text-base font-semibold leading-6 text-white transition duration-200 ease-in-out bg-indigo-700 border border-transparent rounded-lg hover:bg-indigo-800 shadow-xl transform hover:scale-[1.02];
+        }
+        /* Estilo para la navegación que cambia al hacer scroll */
+        .navbar-scrolled {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        /* Estilo para tarjetas de marcas */
+        .brand-card {
+            @apply p-4 flex items-center justify-center bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 border border-gray-100;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- BARRA DE NAVEGACIÓN (HEADER) -->
+    <header id="navbar" class="fixed w-full z-30 transition duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logotipo de texto -->
+                <a href="#hero" class="flex-shrink-0 text-3xl font-extrabold text-indigo-700 tracking-tight">
+                    MOBILGERA<span class="text-gray-900">.</span>
+                </a>
+                
+                <!-- Navegación -->
+                <nav class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#mision" class="text-sm font-medium text-gray-700 hover:text-indigo-600 transition duration-150">Misión</a>
+                    <a href="#productos" class="text-sm font-medium text-gray-700 hover:text-indigo-600 transition duration-150">Productos</a>
+                    <a href="#marcas" class="text-sm font-medium text-gray-700 hover:text-indigo-600 transition duration-150">Marcas</a>
+                    <a href="#contacto" class="btn-primary text-sm px-4 py-2 hover:bg-indigo-800">Cotización Rápida</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO (Principal) -->
+    <section id="hero" class="pt-24 md:pt-32 lg:pt-48 bg-mobilgera-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 lg:pb-32">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <!-- Contenido de Texto -->
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-7 lg:text-left">
+                    <span class="text-sm font-semibold text-indigo-300 uppercase tracking-wider">Comercialización Industrial Especializada</span>
+                    <h1 class="mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-7xl">
+                        <span class="block">Rodamientos y Lubricación</span>
+                        <span class="block text-indigo-400">para Máxima Operación.</span>
+                    </h1>
+                    <p class="mt-3 text-lg text-indigo-200 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                        Somos su socio estratégico en la provisión de componentes críticos: rodamientos, grasas especializadas, chumaceras y más. Calidad superior de marcas líderes mundiales.
+                    </p>
+                    <!-- Botones de Acción -->
+                    <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+                        <a href="#productos" class="btn-primary">
+                            Explorar Catálogo
+                        </a>
+                        <a href="#contacto" class="inline-flex items-center justify-center mt-3 sm:mt-0 sm:ml-4 px-10 py-3 text-base font-semibold leading-6 text-white transition duration-200 ease-in-out border border-white rounded-lg hover:bg-white hover:text-indigo-700 shadow-xl transform hover:scale-[1.02]">
+                            Solicitar Cotización
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ilustración Placeholder de un rodamiento grande -->
+                <div class="hidden lg:block lg:col-span-5 flex justify-center items-center">
+                    <img class="w-full max-w-lg rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-[1.05] opacity-70" 
+                        src="https://placehold.co/600x450/1e3a8a/ffffff?text=Rodamiento+Industrial" 
+                        alt="Ilustración de Rodamiento Industrial de Alta Precisión"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x450/1e3a8a/ffffff?text=Rodamiento'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MISIÓN / VISIÓN -->
+    <section id="mision" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+                <!-- Misión -->
+                <div class="p-6 rounded-xl shadow-xl border-t-4 border-indigo-600 mb-10 lg:mb-0">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Nuestra Misión</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        En MobilGera Industries nos comprometemos a proveer productos de la más alta calidad, como grasa Klüber y SKF, rodamientos de marcas prestigiosas como FAG, SKF, Koyo, Timken, McGuill e INA, así como poleas y engranajes, para satisfacer las necesidades de las industrias.
+                    </p>
+                    <p class="mt-4 text-base font-semibold text-indigo-700">
+                        Objetivo: Ser el socio preferido por nuestra excelencia en el servicio y la oferta de productos confiables y de alta calidad.
+                    </p>
+                </div>
+                <!-- Visión -->
+                <div class="p-6 rounded-xl shadow-xl border-t-4 border-indigo-600">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Nuestra Visión</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Nos esforzamos por ser proveedores líderes en la industria de rodamientos, lubricantes, engranajes, poleas y más, brindando productos de calidad que impulsan la eficiencia y confianza en cada máquina y equipo en los que se utilizan.
+                    </p>
+                    <p class="mt-4 text-base font-semibold text-indigo-700">
+                        Contribuyendo al éxito y crecimiento de nuestros clientes a nivel nacional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRODUCTOS (CATÁLOGO) -->
+    <section id="productos" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wider uppercase">Catálogo Principal</h2>
+                <p class="mt-2 text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                    Suministro de Componentes Críticos
+                </p>
+                <p class="mt-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
+                    Comercializamos solo productos de probada durabilidad y rendimiento, esenciales para el funcionamiento ininterrumpido de su maquinaria industrial.
+                </p>
+            </div>
+
+            <!-- Grid de Productos -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Producto 1: Rodamientos -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-indigo-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl text-indigo-600 mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Rodamientos Industriales</h3>
+                    <p class="text-gray-600">
+                        Rodamientos de bola, de rodillos cónicos, cilíndricos y esféricos. Incluye rodamientos de precisión de marcas como *SKF, FAG, NTN, Koyo y Timken*.
+                    </p>
+                    <a href="#marcas" class="mt-4 text-indigo-600 font-medium inline-block hover:text-indigo-800">Ver Marcas →</a>
+                </div>
+
+                <!-- Producto 2: Lubricación -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-indigo-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl text-indigo-600 mb-4">🧪</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Grasas y Lubricantes Especiales</h3>
+                    <p class="text-gray-600">
+                        Lubricantes de alto rendimiento, grasas para rodamientos, aceites hidráulicos y aceites para compresores. Distribuidores de *Klüber Lubrication, SKF y Chevron*.
+                    </p>
+                    <a href="#marcas" class="mt-4 text-indigo-600 font-medium inline-block hover:text-indigo-800">Ver Marcas →</a>
+                </div>
+
+                <!-- Producto 3: Soportes y Sello -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-indigo-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl text-indigo-600 mb-4">🛠️</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Chumaceras y Retenes</h3>
+                    <p class="text-gray-600">
+                        Soportes y sellos de retención para protección de rodamientos. Incluye chumaceras de diversos materiales y retenes de alta durabilidad para aplicaciones exigentes.
+                    </p>
+                    <a href="#contacto" class="mt-4 text-indigo-600 font-medium inline-block hover:text-indigo-800">Cotizar ahora →</a>
+                </div>
+
+                <!-- Producto 4: Transmisión -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-indigo-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl text-indigo-600 mb-4">⛓️</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Elementos de Transmisión</h3>
+                    <p class="text-gray-600">
+                        Comercialización de bandas, cadenas, catarinas, poleas y engranajes. Soluciones completas para la transmisión de potencia en ambientes industriales.
+                    </p>
+                    <a href="#contacto" class="mt-4 text-indigo-600 font-medium inline-block hover:text-indigo-800">Cotizar ahora →</a>
+                </div>
+            </div>
+
+             <!-- CTA de Productos -->
+            <div class="mt-16 text-center">
+                <p class="text-xl text-gray-700">¿Necesitas un repuesto urgente o una marca específica? </p>
+                <a href="#contacto" class="btn-primary mt-4">
+                    Solicita tu Cotización Personalizada
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MARCAS PRESTIGIOSAS -->
+    <section id="marcas" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wider uppercase">Calidad Garantizada</h2>
+                <p class="mt-2 text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                    Nuestras Marcas Distinguidas
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Solo comercializamos productos de los fabricantes más confiables del mundo para asegurar la longevidad de su inversión.
+                </p>
+            </div>
+
+            <!-- Grid de Logos de Marcas (Simulados con texto) -->
+            <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Rodamientos -->
+                <div class="brand-card"><span class="text-2xl font-extrabold text-red-600">SKF</span></div>
+                <div class="brand-card"><span class="text-2xl font-extrabold text-blue-800">TIMKEN</span></div>
+                <div class="brand-card"><span class="text-2xl font-extrabold text-gray-700">FAG</span></div>
+                <div class="brand-card"><span class="2xl font-extrabold text-orange-500">Koyo</span></div>
+                <div class="brand-card"><span class="text-2xl font-extrabold text-indigo-700">NTN</span></div>
+                <div class="brand-card"><span class="text-2xl font-extrabold text-green-700">NSK</span></div>
+                <!-- Lubricantes/Otros -->
+                <div class="brand-card"><span class="text-xl font-bold text-blue-900">KLÜBER</span></div>
+                <div class="brand-card"><span class="text-2xl font-extrabold text-red-700">INA</span></div>
+                <div class="brand-card"><span class="text-2xl font-extrabold text-gray-600">ISB</span></div>
+                <div class="brand-card"><span class="text-xl font-bold text-gray-800">CHEVRON</span></div>
+                <div class="brand-card"><span class="text-2xl font-extrabold text-indigo-900">IR</span></div>
+                <div class="brand-card"><span class="text-xl font-bold text-orange-700">KAESER</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN DE CONTACTO/COTIZACIÓN -->
+    <section id="contacto" class="py-16 md:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <!-- Información de Contacto -->
+                <div class="lg:col-span-4 text-white mb-10 lg:mb-0">
+                    <h2 class="text-4xl font-extrabold tracking-tight text-indigo-400">
+                        Contáctanos Hoy Mismo
+                    </h2>
+                    <p class="mt-4 text-lg text-indigo-200">
+                        Recibe cotizaciones y soporte técnico rápido. Estamos listos para proveer los repuestos que su operación requiere.
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start">
+                            <!-- Icono de Email -->
+                            <svg class="flex-shrink-0 h-6 w-6 text-indigo-400 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7"></path></svg>
+                            <p class="ml-3 text-base text-white">mobilgeraindustries@gmail.com</p>
+                        </div>
+                        <div class="flex items-start">
+                            <!-- Icono de Teléfono -->
+                            <svg class="flex-shrink-0 h-6 w-6 text-indigo-400 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a11.096 11.096 0 005.485 5.485l1.128-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div class="ml-3 text-base text-white">
+                                <p>56 24 05 10 44</p>
+                                <p>55 51 03 03 74</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de Contacto (Simulado) -->
+                <div class="lg:col-span-8 bg-white p-8 rounded-xl shadow-2xl">
+                    <form id="contactForm" action="#" method="POST" class="space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Formulario de Cotización</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+                                <input type="text" id="name" name="name" required class="block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700">Empresa/Industria</label>
+                                <input type="text" id="company" name="company" required class="block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Nombre de tu empresa">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required class="block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="tu.correo@empresa.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Detalles de la Solicitud (Marca, Modelo, Cantidad)</label>
+                            <textarea id="message" name="message" rows="5" required class="block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Ej: 50 rodamientos SKF 6205, 1 barril de grasa Klüberplex B EM 100..."></textarea>
+                        </div>
+                        
+                        <div class="text-right">
+                            <button type="submit" class="btn-primary w-full sm:w-auto">
+                                Enviar Solicitud de Cotización
+                            </button>
+                        </div>
+                        <!-- Mensaje de estado (Inicialmente oculto) -->
+                        <div id="statusMessage" class="mt-4 hidden p-3 rounded-lg text-sm font-medium" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <div class="flex justify-center mb-6">
+                 <a href="#hero" class="text-2xl font-extrabold text-white tracking-tight">
+                    MOBILGERA<span class="text-indigo-400"> INDUSTRIES.</span>
+                </a>
+            </div>
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <div class="px-5 py-2">
+                    <a href="#mision" class="text-base text-gray-400 hover:text-white">Nosotros</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#productos" class="text-base text-gray-400 hover:text-white">Productos</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#marcas" class="text-base text-gray-400 hover:text-white">Marcas</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#contacto" class="text-base text-gray-400 hover:text-white">Contacto</a>
+                </div>
+            </nav>
+            <p class="mt-8 text-center text-sm text-gray-400">
+                &copy; <span id="currentYear"></span> Mobilgera Industries. Calidad y Servicio Industrial.
+            </p>
+        </div>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Establecer el año actual en el footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // 2. Lógica para el formulario de contacto (Simulación)
+            const contactForm = document.getElementById('contactForm');
+            const statusMessage = document.getElementById('statusMessage');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulación de envío exitoso
+                const isSuccess = Math.random() > 0.1;
+
+                // Limpiar clases
+                statusMessage.className = 'mt-4 p-3 rounded-lg text-sm font-medium';
+                
+                if (isSuccess) {
+                    statusMessage.classList.add('bg-green-100', 'text-green-800');
+                    statusMessage.textContent = '¡Solicitud enviada! Un experto de Mobilgera Industries le contactará en breve.';
+                    contactForm.reset(); // Limpia el formulario
+                } else {
+                    statusMessage.classList.add('bg-red-100', 'text-red-800');
+                    statusMessage.textContent = 'Error al enviar la solicitud. Por favor, revise sus datos o llame directamente a los teléfonos.';
+                }
+                statusMessage.classList.remove('hidden');
+
+                // Ocultar el mensaje después de 6 segundos
+                setTimeout(() => {
+                    statusMessage.classList.add('hidden');
+                }, 6000);
+            });
+
+            // 3. Lógica para la barra de navegación que cambia al hacer scroll
+            const navbar = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                    navbar.classList.remove('bg-transparent');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                    navbar.classList.add('bg-transparent');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
